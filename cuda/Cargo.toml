@@ -1,0 +1,12 @@
+[package]
+name = "blake3-cuda"
+version = "0.0.1"
+authors = ["Sudya"]
+description = "the BLAKE3 CUDA hash function"
+repository = "https://github.com/sudyakov/BLAKE3-CUDA.git"
+license = "CC0-1.0 OR Apache-2.0"
+readme = "README.md"
+edition = "2021"
+
+[dependencies]
+async-cuda = { git = "https://github.com/oddity-ai/async-cuda.git", version = "0.5.4", features = ["ndarray", "npp"] }

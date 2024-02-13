@@ -1,0 +1,6 @@
+{
+    "cmake.sourceDirectory": "/home/sudya/Repos/BLAKE3-CUDA/c",
+    "rust-analyzer.linkedProjects": [
+        "./b3sum/Cargo.toml"
+    ]
+}
