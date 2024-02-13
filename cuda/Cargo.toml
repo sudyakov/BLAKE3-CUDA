@@ -9,4 +9,4 @@ readme = "README.md"
 edition = "2021"
 
 [dependencies]
-async-cuda = { git = "https://github.com/oddity-ai/async-cuda.git", version = "0.5.4", features = ["ndarray", "npp"] }
+async-cuda = { path = "../async-cuda", version = "0.5.4", features = ["ndarray", "npp"] }
