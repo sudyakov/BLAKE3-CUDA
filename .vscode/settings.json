@@ -1,6 +1,7 @@
 {
     "cmake.sourceDirectory": "/home/sudya/Repos/BLAKE3-CUDA/c",
     "rust-analyzer.linkedProjects": [
-        "./b3sum/Cargo.toml"
+        "./b3sum/Cargo.toml",
+        "./c/blake3_c_rust_bindings"
     ]
 }
