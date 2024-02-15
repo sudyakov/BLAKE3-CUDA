@@ -120,4 +120,6 @@ cc = "1.0.4"
 members = [
   "b3sum",
   "cuda",
+  "reference_impl",
+  "c/blake3_c_rust_bindings"
 ]
