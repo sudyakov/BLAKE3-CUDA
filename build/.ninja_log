@@ -1,9 +1,9 @@
 # ninja log v5
 1	80	1708012009308425820	CMakeFiles/blake3.dir/blake3_sse2_x86-64_unix.S.o	dc9d98ea501e0517
 0	80	1708012009308425820	CMakeFiles/blake3.dir/blake3_avx2_x86-64_unix.S.o	74b71ce9555eff0
+182	224	1708012009458425821	libblake3.a	45e95b35d0629ba0
 1	82	1708012009308425820	CMakeFiles/blake3.dir/blake3_sse41_x86-64_unix.S.o	cb9567446502e31d
-0	83	1708012009308425820	CMakeFiles/blake3.dir/blake3_avx512_x86-64_unix.S.o	3e20e6f5d2b593cb
 0	87	1708012009318425820	CMakeFiles/blake3.dir/blake3.c.o	cf3757d36d975e28
+0	83	1708012009308425820	CMakeFiles/blake3.dir/blake3_avx512_x86-64_unix.S.o	3e20e6f5d2b593cb
 0	171	1708012009398425820	CMakeFiles/blake3.dir/blake3_portable.c.o	e019d864eee83b54
 0	182	1708012009408425820	CMakeFiles/blake3.dir/blake3_dispatch.c.o	931651b852157f97
-182	224	1708012009458425821	libblake3.a	45e95b35d0629ba0
