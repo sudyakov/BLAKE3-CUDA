@@ -9,6 +9,7 @@
 			"./b3sum/Cargo.toml",
 			"./c/blake3_c_rust_bindings",
 			"./c/blake3_c_rust_bindings/Cargo.toml"
-		]
+		],
+		"rust-analyzer.showUnlinkedFileNotification": false
 	}
 }
