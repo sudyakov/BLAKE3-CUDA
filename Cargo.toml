@@ -120,5 +120,6 @@ members = [
   "b3sum",
   "cuda",
   "reference_impl",
-  "c/blake3_c_rust_bindings"
+  "c/blake3_c_rust_bindings",
+  "cuda/crates/cudarc-main"
 ]
