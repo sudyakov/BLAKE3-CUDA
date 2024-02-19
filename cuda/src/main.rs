@@ -1,36 +1,35 @@
-use cudarc::driver::{CudaDevice, DriverError, LaunchAsync, LaunchConfig};
-use cudarc::nvrtc::compile_ptx;
+use cudarc::{
+    driver::{CudaDevice, DriverError, LaunchAsync, LaunchConfig},
+    nvrtc::Ptx,
+};
 
-const PTX_SRC: &str = "
-extern \"C\" __global__ void matmul(float* A, float* B, float* C, int N) {
-    int ROW = blockIdx.y*blockDim.y+threadIdx.y;
-    int COL = blockIdx.x*blockDim.x+threadIdx.x;
+// const PTX_SRC: &str = "
+// extern \"C\" __global__ void matmul(float* A, float* B, float* C, int N) {
+//     int ROW = blockIdx.y*blockDim.y+threadIdx.y;
+//     int COL = blockIdx.x*blockDim.x+threadIdx.x;
 
-    float tmpSum = 0;
+//     float tmpSum = 0;
 
-    if (ROW < N && COL < N) {
-        // each thread computes one element of the block sub-matrix
-        for (int i = 0; i < N; i++) {
-            tmpSum += A[ROW * N + i] * B[i * N + COL];
-        }
-    }
-    // printf(\"pos, (%d, %d) - N %d - value %d\\n\", ROW, COL, N, tmpSum);
-    C[ROW * N + COL] = tmpSum;
-}
-";
+//     if (ROW < N && COL < N) {
+//         // each thread computes one element of the block sub-matrix
+//         for (int i = 0; i < N; i++) {
+//             tmpSum += A[ROW * N + i] * B[i * N + COL];
+//         }
+//     }
+//     // printf(\"pos, (%d, %d) - N %d - value %d\\n\", ROW, COL, N, tmpSum);
+//     C[ROW * N + COL] = tmpSum;
+// }
+// ";
 
 fn main() -> Result<(), DriverError> {
     let start = std::time::Instant::now();
-
-    // Compiles the PTX source code and checks the compilation time.
-    // Prints a message with the compilation time.
-    let ptx = compile_ptx(PTX_SRC).unwrap();
-    println!("Compilation succeeded in {:?}", start.elapsed());
 
     // Creates a new CudaDevice instance for the GPU with the given index.
     // Prints a message with the elapsed time since `start` was instantiated.
     // This measures the time taken to initialize the CudaDevice.
     let dev = CudaDevice::new(0)?;
+    let ptx_path = "/home/sudya/Repos/BLAKE3-CUDA/cuda/crates/cudarc-main/examples/sin.ptx";
+    let ptx = Ptx::from_file(ptx_path);
     println!("Built in {:?}", start.elapsed());
 
     // Loads the compiled PTX code into the CudaDevice instance `dev` using the
@@ -80,6 +79,7 @@ fn main() -> Result<(), DriverError> {
     println!("Found {:?} in {:?}", c_host, start.elapsed());
     Ok(())
 }
+
 
 
 
