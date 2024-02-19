@@ -101,7 +101,7 @@ memmap2 = { version = "0.9", optional = true }
 rayon = { version = "1.2.1", optional = true }
 serde = { version = "1.0", default-features = false, features = ["derive"], optional = true }
 zeroize = { version = "1", default-features = false, features = ["zeroize_derive"], optional = true }
-#cudarc = { path = "cuda/crates/cudarc-main" }
+
 
 [dev-dependencies]
 hmac = "0.12.0"
