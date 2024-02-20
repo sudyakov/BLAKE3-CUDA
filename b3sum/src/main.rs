@@ -5,6 +5,7 @@ use std::fs::File;
 use std::io;
 use std::io::prelude::*;
 use std::path::{Path, PathBuf};
+use std::time::Instant;
 
 #[cfg(test)]
 mod unit_tests;
@@ -491,7 +492,16 @@ fn main() -> Result<()> {
                 // stderr. This allows e.g. `b3sum *` to print errors for
                 // non-files and keep going. However, if we encounter any
                 // errors we'll still return non-zero at the end.
+
+                // Start timer
+                let start = Instant::now();
+
                 let result = hash_one_input(path, &args);
+                // Stop timer
+                let elapsed = start.elapsed();
+                // Print elapsed time
+                println!("Time taken: {:?}", elapsed);
+
                 if let Err(e) = result {
                     files_failed = files_failed.saturating_add(1);
                     eprintln!("{}: {}: {}", NAME, path.to_string_lossy(), e);
