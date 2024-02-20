@@ -495,7 +495,7 @@ fn main() -> Result<()> {
 
                 // Start timer
                 let start = Instant::now();
-
+                // Call hash_one_input
                 let result = hash_one_input(path, &args);
                 // Stop timer
                 let elapsed = start.elapsed();
