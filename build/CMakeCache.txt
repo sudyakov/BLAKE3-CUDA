@@ -33,13 +33,15 @@ CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //ASM compiler
-CMAKE_ASM_COMPILER:FILEPATH=/usr/bin/clang
+CMAKE_ASM_COMPILER:FILEPATH=/usr/bin/gcc
 
-//LLVM archiver
-CMAKE_ASM_COMPILER_AR:FILEPATH=/usr/lib/llvm-14/bin/llvm-ar
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_ASM_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar
 
-//Generate index for LLVM archive
-CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/usr/lib/llvm-14/bin/llvm-ranlib
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib
 
 //Flags used by the ASM compiler during all build types.
 CMAKE_ASM_FLAGS:STRING=
@@ -63,16 +65,18 @@ CMAKE_BUILD_TYPE:STRING=Debug
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/clang
+//C compiler
+CMAKE_C_COMPILER:STRING=/usr/bin/gcc
 
-//LLVM archiver
-CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/llvm-ar-14
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-11
 
-//Generate index for LLVM archive
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/llvm-ranlib-14
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-11
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=

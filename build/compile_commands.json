@@ -1,37 +1,37 @@
 [
 {
   "directory": "/home/sudya/Repos/BLAKE3-CUDA/build",
-  "command": "/usr/bin/clang  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -fvisibility=hidden -std=c17 -o CMakeFiles/blake3.dir/blake3.c.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3.c",
+  "command": "/usr/bin/gcc  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -fvisibility=hidden -std=c17 -o CMakeFiles/blake3.dir/blake3.c.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3.c",
   "file": "/home/sudya/Repos/BLAKE3-CUDA/c/blake3.c"
 },
 {
   "directory": "/home/sudya/Repos/BLAKE3-CUDA/build",
-  "command": "/usr/bin/clang  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -fvisibility=hidden -std=c17 -o CMakeFiles/blake3.dir/blake3_dispatch.c.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3_dispatch.c",
+  "command": "/usr/bin/gcc  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -fvisibility=hidden -std=c17 -o CMakeFiles/blake3.dir/blake3_dispatch.c.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3_dispatch.c",
   "file": "/home/sudya/Repos/BLAKE3-CUDA/c/blake3_dispatch.c"
 },
 {
   "directory": "/home/sudya/Repos/BLAKE3-CUDA/build",
-  "command": "/usr/bin/clang  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -fvisibility=hidden -std=c17 -o CMakeFiles/blake3.dir/blake3_portable.c.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3_portable.c",
+  "command": "/usr/bin/gcc  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -fvisibility=hidden -std=c17 -o CMakeFiles/blake3.dir/blake3_portable.c.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3_portable.c",
   "file": "/home/sudya/Repos/BLAKE3-CUDA/c/blake3_portable.c"
 },
 {
   "directory": "/home/sudya/Repos/BLAKE3-CUDA/build",
-  "command": "/usr/bin/clang  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -o CMakeFiles/blake3.dir/blake3_avx2_x86-64_unix.S.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3_avx2_x86-64_unix.S",
+  "command": "/usr/bin/gcc  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -o CMakeFiles/blake3.dir/blake3_avx2_x86-64_unix.S.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3_avx2_x86-64_unix.S",
   "file": "/home/sudya/Repos/BLAKE3-CUDA/c/blake3_avx2_x86-64_unix.S"
 },
 {
   "directory": "/home/sudya/Repos/BLAKE3-CUDA/build",
-  "command": "/usr/bin/clang  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -o CMakeFiles/blake3.dir/blake3_avx512_x86-64_unix.S.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3_avx512_x86-64_unix.S",
+  "command": "/usr/bin/gcc  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -o CMakeFiles/blake3.dir/blake3_avx512_x86-64_unix.S.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3_avx512_x86-64_unix.S",
   "file": "/home/sudya/Repos/BLAKE3-CUDA/c/blake3_avx512_x86-64_unix.S"
 },
 {
   "directory": "/home/sudya/Repos/BLAKE3-CUDA/build",
-  "command": "/usr/bin/clang  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -o CMakeFiles/blake3.dir/blake3_sse2_x86-64_unix.S.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3_sse2_x86-64_unix.S",
+  "command": "/usr/bin/gcc  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -o CMakeFiles/blake3.dir/blake3_sse2_x86-64_unix.S.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3_sse2_x86-64_unix.S",
   "file": "/home/sudya/Repos/BLAKE3-CUDA/c/blake3_sse2_x86-64_unix.S"
 },
 {
   "directory": "/home/sudya/Repos/BLAKE3-CUDA/build",
-  "command": "/usr/bin/clang  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -o CMakeFiles/blake3.dir/blake3_sse41_x86-64_unix.S.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3_sse41_x86-64_unix.S",
+  "command": "/usr/bin/gcc  -I/home/sudya/Repos/BLAKE3-CUDA/c -g -o CMakeFiles/blake3.dir/blake3_sse41_x86-64_unix.S.o -c /home/sudya/Repos/BLAKE3-CUDA/c/blake3_sse41_x86-64_unix.S",
   "file": "/home/sudya/Repos/BLAKE3-CUDA/c/blake3_sse41_x86-64_unix.S"
 }
 ]
