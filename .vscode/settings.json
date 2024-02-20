@@ -1,3 +1,7 @@
 {
     "cmake.sourceDirectory": "/home/sudya/Repos/BLAKE3-CUDA/c",
+    "lldb.displayFormat": "auto",
+    "lldb.showDisassembly": "auto",
+    "lldb.dereferencePointers": true,
+    "lldb.consoleMode": "commands",
 }
