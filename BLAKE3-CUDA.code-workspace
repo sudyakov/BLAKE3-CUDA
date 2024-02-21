@@ -10,6 +10,9 @@
 			"./c/blake3_c_rust_bindings",
 			"./c/blake3_c_rust_bindings/Cargo.toml"
 		],
-		"rust-analyzer.showUnlinkedFileNotification": false
+		"rust-analyzer.showUnlinkedFileNotification": false,
+		"files.associations": {
+			"typeinfo": "c"
+		}
 	}
 }
