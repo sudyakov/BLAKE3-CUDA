@@ -122,6 +122,7 @@ members = [
   "cuda",
   "reference_impl",
   "c/blake3_c_rust_bindings",
-  "tools/compiler_version"
+  "tools/compiler_version",
+  "test_vectors"
 ]
 
