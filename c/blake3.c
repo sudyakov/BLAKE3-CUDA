@@ -5,7 +5,12 @@
 #include "blake3.h"
 #include "blake3_impl.h"
 
+#pragma message("Используется имплементация BLAKE3 на Си")
+
 const char *blake3_version(void) { return BLAKE3_VERSION_STRING; }
+
+// Вывести сообщение о подключении библиотеки
+
 
 INLINE void chunk_state_init(blake3_chunk_state *self, const uint32_t key[8],
                              uint8_t flags) {

@@ -14,13 +14,13 @@ prefer_intrinsics = ["blake3/prefer_intrinsics"]
 pure = ["blake3/pure"]
 
 [dependencies]
-anyhow = "1.0.25"
-blake3 = { version = "1", path = "..", features = ["mmap", "rayon"] }
-clap = { version = "4.0.8", features = ["derive", "wrap_help"] }
-hex = "0.4.0"
-rayon = "1.2.1"
-wild = "2.0.3"
+anyhow = "1.0.80"
+blake3 = { version = "1", path = "..", features = ["mmap", "rayon", "pure"] }
+clap = { version = "4.5.1", features = ["derive", "wrap_help"] }
+hex = "0.4.3"
+rayon = "1.8.1"
+wild = "2.2.1"
 
 [dev-dependencies]
-duct = "0.13.3"
-tempfile = "3.1.0"
+duct = "0.13.7"
+tempfile = "3.10.0"
