@@ -61,6 +61,10 @@ def main():
 
     with open("test_vectors.json") as f:
         vectors = json.load(f)
+        # Start timer
+        import time
+        start = time.time()
+
     test_key = vectors["key"].encode()
     test_context = vectors["context_string"]
     for case in vectors["cases"]:
@@ -89,6 +93,10 @@ def main():
         )
 
     print("TESTS PASSED")
+    # End timer
+    end = time.time()
+    print("Time taken:", end - start)
+    
 
 
 if __name__ == "__main__":

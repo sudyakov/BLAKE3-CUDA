@@ -173,7 +173,7 @@ void search(
 
 extern "C" {
 __host__ DLLEXPORT void
-decred_blake3_hash(const uint32_t dimgrid, const uint32_t threads, uint32_t *cv, uint32_t *m, uint32_t *out)
+cuda_blake3_hash(const uint32_t dimgrid, const uint32_t threads, uint32_t *cv, uint32_t *m, uint32_t *out)
 {
 	search<<<dimgrid, threads>>>(
 		out,
